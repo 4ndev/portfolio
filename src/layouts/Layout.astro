@@ -16,21 +16,25 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
+	<body class="bg-slate-900 text-slate-400 antialiased">
+		<div id="grad-box" class="pointer-events-none fixed inset-0 z-30 transition duration-300"></div>
+		<div class="mx-auto min-h-screen max-w-screen-xl font-sans px-24">
+			<slot />
+		</div>
 	</body>
+	<script>
+		const gradientBox = document.getElementById('grad-box');
+		const RGBA = 'rgba(29, 78, 216, 0.15)';
+
+		document.addEventListener('mousemove', function(e) {
+			const windowWidth = window.innerWidth;
+			const windowHeight = window.innerHeight;
+
+			const mouseXpercentage = Math.round((e.pageX / windowWidth) * 100);
+			const mouseYpercentage = Math.round((e.pageY / windowHeight) * 100);
+
+			gradientBox.style.background = `radial-gradient(600px at ${mouseXpercentage}% ${mouseYpercentage}%, ${RGBA}, transparent 80%)`;
+		});
+	</script>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
+
