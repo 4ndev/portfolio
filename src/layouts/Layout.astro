@@ -1,21 +1,13 @@
 ---
-interface Props {
-	title: string;
-}
+import MainHead from './MainHead.astro';
 
-const { title } = Astro.props;
+const {title , description} = Astro.props;
 ---
+
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
+	<MainHead {title} {description} />
 	<body class="bg-slate-900 text-slate-400 antialiased">
 		<div id="grad-box" class="pointer-events-none fixed inset-0 z-30 transition duration-300"></div>
 		<div class="mx-auto min-h-screen max-w-screen-xl font-sans px-24">

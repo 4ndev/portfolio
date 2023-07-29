@@ -1,21 +1,69 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+
+const title = 'Andres Alvarado';
+const description = 'Desarrollador web';
+
 ---
 
-<Layout title="Andrés Alvarado">
+<Layout {title} {description}>
 	<div class="flex justify-between gap-4">
-		<header class="sticky top-0 flex max-h-screen w-1/2 flex-col py-24">
-			<h1 class="text-4xl font-bold tracking-tighter text-slate-200">
-				<a href="/" class="hover:text-teal-300">Andrés Alvarado</a>
-			</h1>
-			<h2 class="mt-3 text-lg font-medium tracking-tighter text-slate-200">Desarrollador web</h2>
-			<p class="mt-4 max-w-xs leading-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat necessitatibus quidem iure accusamus neque mollitia quas omnis odit voluptate laborum fugit corrupti ullam velit dolores quaerat officiis dolorum, repudiandae unde?</p>
-		</header>
+		<Header />
 		<main class="w-1/2 py-24">
-			Optio, veritatis eveniet neque eos ipsa molestiae quam! Ullam maxime tempora aspernatur molestiae iste quaerat ut perferendis veritatis repudiandae, id odit ea facilis veniam magni laboriosam cupiditate unde temporibus quibusdam!
-			Iure reiciendis molestiae saepe repellendus facere modi sit! Corporis non ea, ullam mollitia doloremque officiis animi at sed. Reiciendis cum nobis magnam laudantium, eius commodi cupiditate necessitatibus maiores optio ea.
-			Necessitatibus voluptatem molestias, dolor temporibus explicabo, cumque accusantium qui, ratione tempora perferendis voluptatibus soluta vero exercitationem nostrum doloremque recusandae aut. Modi sunt temporibus ratione voluptate amet magni non esse blanditiis?
-			Ab, nam magnam ut eos aut ratione esse! Doloremque sequi
+			<section id="about" class="mb-16" aria-label="About me">
+				<p class="mb-4">Optio, veritatis eveniet neque eos ipsa molestiae quam! Ullam maxime tempora aspernatur molestiae iste quaerat ut perferendis veritatis repudiandae, id odit ea facilis veniam magni laboriosam cupiditate unde temporibus quibusdam!
+					Iure reiciendis molestiae saepe repellendus facere modi sit! Corporis non ea, ullam mollitia doloremque officiis animi at sed. Reiciendis cum nobis magnam laudantium, eius commodi cupiditate necessitatibus maiores optio ea.
+				</p>
+				<p>
+					Optio, veritatis eveniet neque eos ipsa molestiae quam! Ullam maxime tempora aspernatur molestiae iste quaerat ut perferendis veritatis repudiandae, id odit ea facilis veniam magni laboriosam cupiditate unde temporibus quibusdam!
+					Iure reiciendis molestiae saepe repellendus facere modi sit! Corporis non ea, ullam mollitia doloremque officiis animi at sed. Reiciendis cum nobis magnam laudantium, eius commodi cupiditate necessitatibus maiores optio ea.
+				</p>
+			</section>
+			<section id="experience" class="mb-16"	aria-label="Work experience">
+				<div>
+					<ol>
+						<li class="mb-12">
+							<header>
+								2018 - 2020
+							</header>
+							<div>
+								<h3 class="font-medium leading-snug text-slate-200 hover:text-teal-300">Lead Engineer - Frontend</h3>
+								<h4 class="text-slate-500">Senior Engineer</h4>
+								<p class="mt-2 leading-normal">Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.</p>
+								<ul class="mt-2 flex flex-wrap gap-2" aria-label="Technologies used">
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React Native</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Typescript</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">JavaScript</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">HTML</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">CSS</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">PHP</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-12">
+							<header>
+								2018 - 2020
+							</header>
+							<div>
+								<h3 class="font-medium leading-snug text-slate-200 hover:text-teal-300">Lead Engineer - Frontend</h3>
+								<h4 class="text-slate-500">Senior Engineer</h4>
+								<p class="mt-2 leading-normal">Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.</p>
+								<ul class="mt-2 flex flex-wrap gap-2" aria-label="Technologies used">
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React Native</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Typescript</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">JavaScript</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">HTML</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">CSS</li>
+									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">PHP</li>
+								</ul>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</section>
 		</main>
 	</div>
 </Layout>
