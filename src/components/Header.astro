@@ -1,5 +1,6 @@
 ---
 import { socialData } from '../data/navData'; 
+import { Icon } from 'astro-icon';
 ---
 
 <header class="sticky top-0 flex max-h-screen w-1/2 flex-col justify-between py-24">
@@ -13,7 +14,11 @@ import { socialData } from '../data/navData';
   <ul class="flex gap-4" aria-label="Social media">
     {
       socialData.map((social) => (
-        <li>{social.name}</li>
+        <li>
+          <a href={social.url} title={social.name} class="hover:text-teal-300" target="_blank" rel="noopener noreferrer">
+            <Icon name={social.icon} width="40" class="hover:scale-110 transition duration-300"/>
+          </a>
+        </li>
       ))
     }
   </ul>
