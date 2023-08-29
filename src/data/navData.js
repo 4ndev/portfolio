@@ -13,5 +13,10 @@ export const socialData = [
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/andres-alvarado-dev/',
     icon: 'mdi:linkedin',
+  },
+  {
+    name: 'Email',
+    url: 'mailto:andres.93@outlook.com',
+    icon: 'mdi:email',
   }
 ]

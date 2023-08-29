@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Experience from '../components/Experience.astro';
 
 const title = 'Andres Alvarado';
 const description = 'Desarrollador web';
@@ -11,76 +12,17 @@ const description = 'Desarrollador web';
 	<div class="flex justify-between gap-4">
 		<Header />
 		<main class="w-1/2 py-24">
-			<section id="about" class="mb-16" aria-label="About me">
-				<p class="mb-4">Optio, veritatis eveniet neque eos ipsa molestiae quam! Ullam maxime tempora aspernatur molestiae iste quaerat ut perferendis veritatis repudiandae, id odit ea facilis veniam magni laboriosam cupiditate unde temporibus quibusdam!
-					Iure reiciendis molestiae saepe repellendus facere modi sit! Corporis non ea, ullam mollitia doloremque officiis animi at sed. Reiciendis cum nobis magnam laudantium, eius commodi cupiditate necessitatibus maiores optio ea.
+			<section id="about" class="mb-16" aria-label="Sobre mi">
+				<p class="mb-4">
+					En 2018, me interesé por el desarrollo web y he estado aprendiendo de forma autodidacta hasta que realice un curso de PHP y en el que hice prácticas en <a href="http://eventscase.com/" class="link-underline font-medium text-slate-200" target="_blank" rel="noreferrer noopener">Eventscase</a>, una empresa de gestión de eventos, en el que he estado más de 4 años trabajando y aprediendo como desarrollador web tanto de <strong class="text-slate-200">Back-end</strong> como <strong class="text-slate-200">Front-end</strong>.
 				</p>
 				<p>
-					Optio, veritatis eveniet neque eos ipsa molestiae quam! Ullam maxime tempora aspernatur molestiae iste quaerat ut perferendis veritatis repudiandae, id odit ea facilis veniam magni laboriosam cupiditate unde temporibus quibusdam!
-					Iure reiciendis molestiae saepe repellendus facere modi sit! Corporis non ea, ullam mollitia doloremque officiis animi at sed. Reiciendis cum nobis magnam laudantium, eius commodi cupiditate necessitatibus maiores optio ea.
+					Si avanzamos hasta el día de hoy, mi objetivo es seguir creciendo como desarrollador web y aprender más sobre las nuevas tecnologías y herramientas que se creen cada día.
 				</p>
 			</section>
-			<section id="experience" class="mb-16"	aria-label="Work experience">
+			<section id="experience" class="mb-16"	aria-label="Experiencia laboral">
 				<div>
-					<ol>
-						<li class="mb-12">
-							<header>
-								2018 - 2020
-							</header>
-							<div>
-								<h3 class="font-medium leading-snug text-slate-200 hover:text-teal-300">Lead Engineer - Frontend</h3>
-								<h4 class="text-slate-500">Senior Engineer</h4>
-								<p class="mt-2 leading-normal">Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.</p>
-								<ul class="mt-2 flex flex-wrap gap-2" aria-label="Technologies used">
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React Native</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Typescript</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">JavaScript</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">HTML</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">CSS</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">PHP</li>
-								</ul>
-							</div>
-						</li>
-						<li class="mb-12">
-							<header>
-								2018 - 2020
-							</header>
-							<div>
-								<h3 class="font-medium leading-snug text-slate-200 hover:text-teal-300">Lead Engineer - Frontend</h3>
-								<h4 class="text-slate-500">Senior Engineer</h4>
-								<p class="mt-2 leading-normal">Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.</p>
-								<ul class="mt-2 flex flex-wrap gap-2" aria-label="Technologies used">
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React Native</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Typescript</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">JavaScript</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">HTML</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">CSS</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">PHP</li>
-								</ul>
-							</div>
-						</li>
-						<li class="mb-12">
-							<header>
-								2018 - 2020
-							</header>
-							<div>
-								<h3 class="font-medium leading-snug text-slate-200 hover:text-teal-300">Lead Engineer - Frontend</h3>
-								<h4 class="text-slate-500">Senior Engineer</h4>
-								<p class="mt-2 leading-normal">Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.</p>
-								<ul class="mt-2 flex flex-wrap gap-2" aria-label="Technologies used">
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React Native</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Typescript</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">JavaScript</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">HTML</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">CSS</li>
-									<li class="flex items-center rounded-full bg-teal-400/10 hover:bg-teal-400/30 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">PHP</li>
-								</ul>
-							</div>
-						</li>
-					</ol>
+					<Experience />
 				</div>
 			</section>
 		</main>
