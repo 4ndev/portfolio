@@ -3,7 +3,7 @@ import { socialData } from '../data/navData';
 import { Icon } from 'astro-icon';
 ---
 
-<header class="sticky top-0 flex max-h-screen w-1/2 flex-col justify-between py-24">
+<header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
   <div>
     <h1 class="text-4xl font-bold tracking-tighter text-slate-200">
       <a href="/" class="link-underline">Andrés Alvarado</a>
@@ -11,7 +11,7 @@ import { Icon } from 'astro-icon';
     <h2 class="mt-3 text-lg font-medium tracking-tighter text-teal-300">Desarrollador web</h2>
     <p class="mt-4 max-w-xs leading-normal">I build accessible, inclusive products and digital experiences for the web.</p>
   </div>
-  <ul class="flex gap-4" aria-label="Social media">
+  <ul class="flex gap-4 mt-8" aria-label="Social media">
     {
       socialData.map((social) => (
         <li>
